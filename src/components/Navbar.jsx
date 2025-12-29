@@ -98,7 +98,7 @@ const Navbar = () => {
             India&apos;s Leading 360° Digital Marketing Agency
           </div>
           <div className="flex space-x-6 items-center">
-            <Link to="mailto:info@zentrix.com" className="text-white">
+            <Link to="mailto:hello@zentrix.com" className="text-white">
               hello@zentrix.media
             </Link>
           </div>

@@ -18,7 +18,7 @@ const Contactcomp = () => {
         </div>
         {/* Right - Form */}
         <div className="flex">
-          <div className="w-full h-full bg-white px-10 py-5 flex flex-col justify-center"> {/* Removed min-h-[520px]; height now responsive to content */}
+          <div className="w-full h-full bg-white px-10 pt-5 pb-10 flex flex-col justify-center"> {/* Removed min-h-[520px]; height now responsive to content */}
             <p className="text-xl  font-medium my-4 text-gray-700 leading-tight animate-fade-in-up">
               Tell us about your brand and goals. We’ll get back to you within 24 hours.
             </p>
@@ -64,7 +64,7 @@ const Contactcomp = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-blue-700 text-white py-4 rounded-full hover:bg-gradient-to-r hover:from-blue-800 hover:to-pink-700 transition shadow-lg" // Fixed hover classes to work with gradient
+                className="w-full bg-blue-700 text-white py-4 rounded-full hover:bg-gradient-to-r hover:from-blue-600 hover:via-blue-500 hover:via-pink-600 hover:to-pink-700 transition shadow-lg" // Fixed hover classes to work with gradient
               >
                 Send Message
               </button>

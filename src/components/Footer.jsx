@@ -22,8 +22,8 @@ const Footer = () => {
       <div className="max-w-7xl md:mx-auto lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Section */}
-          <div className="space-y-4">
-           <img src={Logo} className='bg-white h-20 w-20 md:h-40 md:w-40' alt='company logo'/>
+          <div>
+           <img src={Logo} className='h-20 w-20 md:h-40 md:w-40' alt='company logo'/>
             <div className="flex space-x-5">
               {footerData.company.socialLinks.map((link, index) => {
                 const Icon = link.icon;
