@@ -23,12 +23,13 @@ export default function BannerSection() {
 
   return (
     <>
+      {/* Preload link for the background image (add this to your index.html <head> for global preload, or use a library like React Helmet) */}
       <link rel="preload" href={Background} as="image" />
+
       <header
         className="relative text-center py-20 md:py-45 px-4 md:px-8 bg-cover bg-no-repeat bg-center overflow-hidden"
         style={{
           backgroundImage: `url(${Background})`,
-          loading:'lazy'
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>

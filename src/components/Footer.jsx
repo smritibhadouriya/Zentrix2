@@ -17,13 +17,13 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-gray-900 px-3 py-12 md:px-8 md:py-16  lg:py-24 relative overflow-hidden text-white"
+      className="bg-gray-900 px-6 py-12 md:px-8 md:py-16  lg:py-24 relative overflow-hidden text-white"
     >
       <div className="max-w-7xl md:mx-auto lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Section */}
-          <div>
-           <img src={Logo} className='h-20 w-20 md:h-40 md:w-40' alt='company logo'/>
+          <div className="space-y-4">
+           <img src={Logo} className='bg-white h-20 w-20 md:h-40 md:w-40' alt='company logo'/>
             <div className="flex space-x-5">
               {footerData.company.socialLinks.map((link, index) => {
                 const Icon = link.icon;
@@ -100,7 +100,7 @@ const Footer = () => {
                 );
               })}
             </ul>
-            <form onSubmit={handleSubscribe} className="flex w-full max-w-sm mt-6">
+            <form onSubmit={handleSubscribe} className="flex w-full max-w-sm mx-auto mt-6">
               <input
                 type="email"
                 name="email"

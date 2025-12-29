@@ -72,7 +72,6 @@ const SEO = () => {
   style={{
     backgroundImage: `url(${Seobackground})`,
     backgroundSize: 'cover',
-    loading: "lazy"
   }}
 >
 

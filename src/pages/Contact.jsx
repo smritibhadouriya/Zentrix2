@@ -65,7 +65,7 @@ const Contact = () => {
                     href="mailto:business@zentrix.media"
                     className="text-gray-600 hover:text-blue-900 transition"
                   >
-                    hello@zentrix.media
+                    business@zentrix.media
                   </a>
                 </div>
               </div>

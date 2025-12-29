@@ -66,7 +66,6 @@ const PR = () => {
         className="relative text-center py-20 px-4 md:px-8 bg-cover bg-no-repeat overflow-hidden"
         style={{
           backgroundImage: `url(${Background})`,
-          loading: "lazy"
         }}
       >
         <div className="absolute inset-0 bg-gray-800/60 z-0"></div>
