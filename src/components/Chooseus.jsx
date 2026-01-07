@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { } from "react-icons/fi"; // From Feather Icons (light & modern)
 import Performance1 from "../assets/imagesuse/performance1.jpg";
 import social from "../assets/imagesuse/social.jpg";
@@ -36,15 +36,28 @@ export default function Chooseus() {
     { value: "24/7", label: "Real-time Optimization" },
   ];
 
+  // Auto-cycle effect: changes tab every 30 seconds, resets on manual interaction
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActiveTab((prev) => {
+        if (prev === -1) return 0;
+        return (prev + 1) % tabs.length;
+      });
+    }, 10000); // 5 seconds
+
+    return () => clearTimeout(timer);
+  }, [activeTab, tabs.length]);
+
   return (
     <section className="relative overflow-hidden bg-blue-900/10">
       {/* 360° Digital Domination Section */}
       <div className="relative z-10 py-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl   font-semibold mb-3 text-gray-900 leading-tight animate-fade-in-up">
-              360° Digital Domination
-            </h1>
+          <h1 className="font-inter font-bold text-[30px] md:text-[34.3px] leading-[45px]  tracking-normal text-center mb-3 text-gray-900 animate-fade-in-up">
+  360° Digital Domination
+</h1>
+
             <p className="text-xl  font-medium mb-2 text-gray-800 leading-tight animate-fade-in-up">
               Comprehensive strategies that cover every angle of your digital presence.
             </p>
@@ -87,9 +100,9 @@ export default function Chooseus() {
                       {/* Plus / Minus Circle Icon */}
                     <div className="flex-shrink-0 transition-all duration-300">
                       {isActive ? (
-                        <BiMinusCircle className="w-5 h-5  text-pink-500" />
+                        <BiMinusCircle className="w-5 h-5  text-[#F16D34]" />
                       ) : (
-                        <BiPlusCircle className="w-5 h-5  text-blue-500 group-hover:scale-110 transition-transform" />
+                        <BiPlusCircle className="w-5 h-5  text- group-hover:scale-110 transition-transform" />
                       )}
                     </div>
                   </div>

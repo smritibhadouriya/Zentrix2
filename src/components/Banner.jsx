@@ -30,6 +30,7 @@ export default function BannerSection() {
         className="relative text-center py-20 md:py-45 px-4 md:px-8 bg-cover bg-no-repeat bg-center overflow-hidden"
         style={{
           backgroundImage: `url(${Background})`,
+          loading: "lazy",
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
@@ -44,7 +45,7 @@ export default function BannerSection() {
          
           <button
             onClick={openModal}
-            className="inline-flex items-center px-8 py-4 bg-pink-600 text-white font-bold text-lg rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg animate-pulse-slow"
+            className="inline-flex items-center px-8 py-4 bg-[#F16D34] text-white font-bold text-lg rounded-full hover:bg-[#F16D34]/80 transition-all duration-300 transform hover:scale-105 shadow-lg animate-pulse-slow"
           >
             Discover More
           </button>
